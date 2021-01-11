@@ -1,0 +1,26 @@
+nav {
+  background: "#fff";
+  color: "#333";
+}
+
+.input-nav {
+  margin-left: 5rem !important;
+  width: 30rem;
+}
+
+.space {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1320px) {
+  .input-nav {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .input-nav,
+  .space {
+    display: none;
+  }
+}

@@ -1,0 +1,332 @@
+<div class="dashboard d-flex">
+    <div>
+        <SidebarFree bgColor="#333" color="#fff"></SidebarFree>
+    </div>
+    <div style="flex:1 1 auto; display:flex; flex-flow:column; height:100vh; overflow-y:hidden">
+        <Navbar bg="#333" color="#fff" ></Navbar>
+        <div style="height:100%">
+            <div style="height:calc(100% - 64px); overflow-y:scroll">
+                <div class="d-flex card-section">
+                    <div class="cards-container">
+                        <div class="card-bg w-100 border d-flex flex-column">
+                            <div class="p-4 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="m-0 h5 font-weight-bold text-dark">Sales</h4>
+                                    <div class="py-1 px-2 bg-grey rounded-circle"><i
+                                            class="fas fa-suitcase"></i></div>
+                                </div>
+                                <h4 class="my-4 text-right text-dark h2 font-weight-bold">$30,000</h4>
+                                <CDBProgress value=65 height=8 colors="primary"></CDBProgress>
+                                <p class="mt-2 text-success small">
+                                    <i class="fas fa-angle-up p-0"></i> 27.4%
+                                    <span style="font-size:0.95em" class="ml-2 font-weight-bold text-muted">Since
+                                        last month</span>
+                                </p>
+                                <p class="c-p mb-0 text-dark font-weight-bold text-right mt-auto">
+                                    More Details
+                                    <i class="fas fa-arrow-right ml-1"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-bg w-100 border d-flex flex-column">
+                            <div class="p-4 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="m-0 h5 font-weight-bold text-dark">Traffic by Source</h4>
+                                    <div class="px-2 py-1 bg-grey rounded-circle"><i
+                                            class="fas fa-chart-line"></i></div>
+                                </div>
+                                <div class="mt-3 d-flex justify-content-between">
+                                    <div style="width:250px; height:150p; margin:0 -4rem"
+                                        class="p-0">
+                                        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [options]="pieChartOptions"
+                                            [colors]="pieChartColors" [legend]="pieChartLegend">
+                                        </canvas>
+                                    </div>
+                                    <div class="text-right w-25">
+                                        <p class="m-0">Google</p>
+                                        <p class="text-success small">10.57</p>
+                                        <div>
+                                            <div
+                                                class="d-flex align-items-center justify-content-between text-success">
+                                                <span style="font-size:3em; margin:-2rem 0px -1.5rem
+                                                    0px">&#8226;</span>
+                                                <span class="small">Google</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between"
+                                                style="color:#9B51E0">
+                                                <span style="font-size:3em; margin:-2rem 0px -1.5rem
+                                                    0px">&#8226;</span>
+                                                <span class="small">Yahoo</span>
+                                            </div>
+                                            <div
+                                                class="d-flex align-items-center justify-content-between text-warning">
+                                                <span style="font-size:3em; margin:-2rem 0px -1.5rem
+                                                    0px">&#8226;</span>
+                                                <span class="small">Bing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="c-p text-dark mb-0 font-weight-bold text-right mt-auto">
+                                    More Details
+                                    <i class="fas fa-arrow-right ml-1"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-bg w-100 border d-flex flex-column p-4" style="grid-row:span 2">
+                            <div class="d-flex">
+                                <h6 class="h5 font-weight-bold text-dark">Team Members</h6>
+                                <div class="ml-auto rounded-circle bg-grey py-1 px-2"><i
+                                        class="fas fa-user"></i></div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane1.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane2.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane3.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane4.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane5.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane1.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane2.png" class="pane-image" size="md" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0" style="font-size:0.75em">Online</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <CDBBtn style="background:#333" [flat]='true' size="small"
+                                        class="border-0 ml-auto px-2 my-2"><span class="msg-rem">Send</span> Message
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                            <p class="c-p text-dark mb-0 font-weight-bold text-right mt-auto">
+                                More Details
+                                <i class="fas fa-arrow-right ml-1"></i>
+                            </p>
+                        </div>
+                        <div class="card-bg w-100 d-flex flex-column border d-flex flex-column"
+                            style="grid-row:span 2">
+                            <div class="p-4 d-flex flex-column h-100">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="m-0 h5 font-weight-bold text-dark">Total Orders</h4>
+                                    <div class="px-2 py-1 bg-grey rounded-circle"><i
+                                            class="fas fa-shopping-bag"></i></div>
+                                </div>
+                                <div class="mt-5 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4 class="m-0 h1 font-weight-bold text-dark">452</h4>
+                                        <p class="text-success small">
+                                            <i class="fas fa-angle-up p-0"></i> 18.52%
+                                        </p>
+                                    </div>
+                                    <div class="text-right d-flex flex-column justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-between text-primary">
+                                            <span style="font-size:3em; margin:-2rem 0px -1.5rem
+                                                0px">&#8226;</span>
+                                            <span class="small">August</span>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between text-warning">
+                                            <span style="font-size:3em; margin:-2rem 0px -1.5rem
+                                                0px">&#8226;</span>
+                                            <span class="small ml-2">September</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-0 mt-auto">
+                                    <canvas height="250" baseChart [datasets]="barChartData" [labels]="barChartLabels" [chartType]="barChartType" [options]="barChartOptions"
+                                         [legend]="barChartLegend">
+                                    </canvas>
+                                    <!-- <Bar data={data.chart2} options={options} /> -->
+                                </div>
+                                <p class="c-p text-dark font-weight-bold text-right mt-3 mb-0">
+                                    More Details
+                                    <i class="fas fa-arrow-right ml-1"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-bg w-100 border d-flex flex-column p-4">
+                            <div class="d-flex">
+                                <h6 class="h5 font-weight-bold text-dark">Messages</h6>
+                                <div class="ml-auto rounded-circle bg-grey px-2 py-1"><i
+                                        class="fas fa-comment-alt"></i></div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane3.png" class="pane-image" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0 small">Hey, how are you.</p>
+                                </div>
+                                <p style="font-size:0.5em" class="ml-auto px-2 d-flex align-items-center text-muted">
+                                    <i class="fas fa-circle mr-1" style="font-size:0.8em"></i>
+                                    <span style="font-size:1.4em">Online</span>
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane4.png" class="pane-image" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0 small">Hey, how are you.</p>
+                                </div>
+                                <p style="font-size:0.5em" class="ml-auto px-2 d-flex align-items-center text-muted">
+                                    <i class="fas fa-circle mr-1" style="font-size:0.8em"></i>
+                                    <span style="font-size:1.4em">Online</span>
+                                </p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <img alt="panelImage" src="../../../assets/img/pane/pane5.png" class="pane-image" />
+                                <div>
+                                    <h6 class="mb-0" style="font-weight:600">Mezue</h6>
+                                    <p class="m-0 small">Hey, how are you.</p>
+                                </div>
+                                <p style="font-size:0.5em" class=" ml-auto px-2 d-flex align-items-center text-muted">
+                                    <i class="fas fa-circle mr-1" style="font-size:0.8em"></i>
+                                    <span style="font-size:1.4em">Online</span>
+                                </p>
+                            </div>
+                            <p class="c-p text-dark font-weight-bold text-right mt-auto mb-0">
+                                More Details
+                                <i class="fas fa-arrow-right ml-1"></i>
+                            </p>
+                        </div>
+                        <div class="card-bg w-100 d-flex flex-column wide border d-flex flex-column">
+                            <div class="d-flex flex-column p-0 h-100">
+                                <div class="mx-4 mt-3 d-flex justify-content-between align-items-center">
+                                    <h4 class="font-weight-bold text-dark h5">Page Visits</h4>
+                                    <div class="p-1 bg-grey rounded-circle"><i class="fas fa-sticky-note"></i>
+                                    </div>
+                                </div>
+                                <div class=" table-responsive-lg">
+                                    <table CdbTable borderless="true" responsiveLg="true">
+                                        <thead class="text-white thead-light">
+                                            <tr>
+                                                <th>Page Name</th>
+                                                <th class="table-rem">Views</th>
+                                                <th class="table-rem">Value</th>
+                                                <th>Bounce Rate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>/demo/admin/index.html</td>
+                                                <td class="table-rem">3,689</td>
+                                                <td class="table-rem">$10</td>
+                                                <td class="text-success text-center"><i class="fas fa-arrow-up"></i>
+                                                    20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/demo/admin/index.html</td>
+                                                <td class="table-rem">3,689</td>
+                                                <td class="table-rem">$10</td>
+                                                <td class="text-success text-center"><i class="fas fa-arrow-up"></i>
+                                                    20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/demo/admin/index.html</td>
+                                                <td class="table-rem">3,689</td>
+                                                <td class="table-rem">$10</td>
+                                                <td class="text-success text-center"><i class="fas fa-arrow-up"></i>
+                                                    20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                
+                                <p class="c-p text-dark font-weight-bold text-right mt-auto mr-3">
+                                    See More
+                                    <i class="fas fa-arrow-right ml-1"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="d-flex align-items-center">
+                        <CDBLink to="/" class="text-dark footer-link">
+                            <img alt="logo" src="../../../assets/img/pages/logo.png" width="25px" />
+                            <span class="ml-4 lead mb-0 font-weight-bold">Devwares</span>
+                        </CDBLink>
+                        <span class="footer-rem" style="font-size:3em; margin:-2rem 0px -1.5rem 1rem;
+                            color:#C4C4C4">&#8226;</span>
+                        <small class="ml-2 mt-1">&copy; Devwares, 2020. All rights reserved.</small>
+                    </div>
+                    <div class="footer-rem">
+                        <CDBBtn [flat]='true' color="dark" class="py-1 px-2 bg-dark border-0">
+                            <i class="fab fa-facebook-f"></i>
+                        </CDBBtn>
+                        <CDBBtn [flat]='true' color="dark" class="mx-3 py-1 px-2 bg-dark border-0">
+                            <i class="fab fa-twitter"></i>
+                        </CDBBtn>
+                        <CDBBtn [flat]='true' color="dark" class="py-1 px-2 bg-dark border-0">
+                            <i class="fab fa-instagram"></i>
+                        </CDBBtn>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>

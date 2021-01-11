@@ -1,0 +1,138 @@
+<div class="dashboard d-flex profile">
+    <div>
+        <SidebarFree bgColor="#333" color="#fff"></SidebarFree>
+    </div>
+    <div style="flex:1 1 auto; display:flex; flex-flow:column; height:100vh; overflow-y:hidden">
+        <Navbar bg="#333" color="#fff"></Navbar>
+        <div style="height:100%">
+            <div style="height:calc(100% - 64px); padding:20px 5%; overflow-y:scroll">
+                <div style="margin:0 auto; max-width:1320px">
+                    <div class="cards-container1">
+                        <div>
+                            <div class="card shadow border-0">
+                                <img alt="profileImage" src="../../../assets/img/pages/heroImage2.png" class="w-100" style="object-fit:cover;
+                                    max-height:500px" />
+                                <div class="card-body">
+                                    <h4 class="card-title mb-2" style="font-weight:600">Warren Briggs</h4>
+                                    <h5 class="mb-2">Photographer</h5>
+                                    <p class="text-justify mt-4">
+                                        <strong class="mb-2">Desciption: </strong>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione perferendis quod animi
+                                        dignissimos
+                                    </p>
+                                    <div class="justify-content-end pr-1">
+                                        <CDBBtn color="dark" outline>More</CDBBtn>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-container">
+                            <div>
+                                <div class="card shadow border-0">
+                                    <img alt="cardImg" class="img-fluid" style="object-fit:cover" src="../../../assets/img/cardImage.png" />
+                                    <div class="p-3">
+                                        <h3>Basic</h3>
+                                        <p>This is just a card text Get important notifications about you or activity you've missed
+                                        </p>
+                                        <CDBBtn style="background:#333; border:none">
+                                            Button
+                                        </CDBBtn>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card shadow border-0 heading-card mx-auto"
+                                    style="background-image:url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg')">
+                                    <div class="p-3 d-flex flex-column h-100 w-100">
+                                        <h4 class="mt-3 text-white">Heading</h4>
+                                        <p class="text-white">Paragraph</p>
+                                        <div class="d-flex justify-content-center mt-auto">
+                                            <CDBBtn color="light" [flat]='true' [block]='false' style="border-radius: 100px;">
+                                                Button
+                                            </CDBBtn>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-container2">
+                        <div>
+                            <div class="card shadow border-0">
+                                <img alt="cardImg" class="img-fluid" style="object-fit:cover" src="../../../assets/img/cardImage.png" />
+                                <img alt="cardImg" class="mx-auto border rounded-circle" style="margin-top:-5rem"
+                                    width="130px" src="../../../assets/img/pane/pane4.png" />
+                                <div class="p-3 d-flex flex-column align-items-center mb-4 text-center">
+                                    <h4 style="font-weight:600">Sammy Russo</h4>
+                                    <p>Senior Software Developer</p>
+                                    <p class="text-muted">Detroit, USA</p>
+                                    <div class="d-flex justify-content-center flex-wrap">
+                                        <CDBBtn class="mr-2" size="small" color="dark"><i class="fas fa-user-plus"></i>
+                                            Connect</CDBBtn>
+                                        <CDBBtn size="small" color="warning"> Send Message </CDBBtn>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card shadow border-0">
+                                <div>
+                                    <img src="../../../assets/img/pages/promotionImage2.png" alt="Project" class="img-fluid" />
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">
+                                        <span style="font-weight:600">Project Name</span>
+                                    </h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+                                        amet numquam iure provident voluptate esse quasi, veritatis totam voluptas.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="p-2" href="#profile">
+                                        Live Preview
+                                        <i class="far fa-image ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card shadow border-0">
+                                <div>
+                                    <img src="../../../assets/img/pages/promotionImage.png" alt="Project" class="img-fluid" />
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center mb-3" style="font-weight:600">
+                                        Card Title
+                                    </h4>
+                                    <p class="card-text text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas.</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a class="p-2" href="#profile">Live Preview<i class="far fa-image ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card shadow border-0">
+                                <div class="p-3">
+                                    <h4 class="mt-3">Heading</h4>
+                                    <p>Paragraph</p>
+                                </div>
+                                <CDBView>
+                                    <CDBIframe src="https://www.youtube.com/embed/xnczyP2jSR0"></CDBIframe>
+                                </CDBView>
+                                <div class="p-3">
+                                    <CDBBtn color="dark" [flat]=true [outline]='true' [block]='false' style="border-radius: 100px;">
+                                        Button
+                                    </CDBBtn>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="d-flex mx-auto py-4">
+                        <small class="mx-auto my-1 text-center">&copy; Devwares, 2020. All rights reserved.</small>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

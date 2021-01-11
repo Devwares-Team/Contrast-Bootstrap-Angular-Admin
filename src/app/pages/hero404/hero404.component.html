@@ -1,0 +1,50 @@
+<div class="hero404">
+    <div class="page-container">
+        <header class="navigation">
+            <CDBNavbar class="bg-transparent p-0" expand="md" [light]=true [scrolling]=true>
+                <CDBNavBrand style="padding-left: 0px;" href="/">
+                    <img alt="logo" src="/assets/img/pages/logo.png" width="25px" />
+                </CDBNavBrand>
+                <CDBNavToggle (click)="content.toggleCollapse()"></CDBNavToggle>
+                <CDBCollapse #content [navbar]=true expand="md" class="w-100">
+                    <CDBNavbarNav [left]="true">
+                        <CDBNavItem [active]='true'>
+                            <CDBBtn [flat]=true class="p-3 border-0 bg-transparent">
+                                <CDBNavLink style="color: #000000" to="#">Home</CDBNavLink>
+                            </CDBBtn>
+                        </CDBNavItem>
+                        <CDBNavItem>
+                            <CDBBtn [flat]=true class="p-3 border-0 bg-transparent">
+                                <CDBNavLink style="color: #000000" to="#">Resources</CDBNavLink>
+                            </CDBBtn>
+                        </CDBNavItem>
+                        <CDBNavItem>
+                            <CDBBtn [flat]=true class="p-3 border-0 bg-transparent">
+                                <CDBNavLink style="color: #000000" to="#">Blog</CDBNavLink>
+                            </CDBBtn>
+                        </CDBNavItem>
+                        <CDBNavItem>
+                            <CDBBtn [flat]=true class="p-3 border-0 bg-transparent">
+                                <CDBNavLink style="color: #000000" to="#">Contact</CDBNavLink>
+                            </CDBBtn>
+                        </CDBNavItem>
+                        <CDBNavItem>
+                            <CDBBtn [flat]=true class="p-3 border-0 bg-transparent">
+                                <CDBNavLink style="color: #000000" to="#">Support</CDBNavLink>
+                            </CDBBtn>
+                        </CDBNavItem>
+                    </CDBNavbarNav>
+                </CDBCollapse>
+            </CDBNavbar>
+        </header>
+        <section class="page-body">
+            <div class="message404">
+                <CDBCardTitle class="h1 font-weight-bold">Oops</CDBCardTitle>
+                <CDBCardTitle class="h3 my-4">Something went wrong</CDBCardTitle>
+                <CDBCardText style="margin-bottom: 16px;">Sorry about that, hmmm... probably a missing page or the links incorrect.</CDBCardText>
+                <CDBBtn [flat]=true color="dark" class="py-2 btn-block">Back Home</CDBBtn>
+            </div>
+            <img class="image404" alt="404" src="/assets/img/pages/hero404.png" />
+        </section>
+    </div>
+</div>
