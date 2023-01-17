@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SidebarFreeComponent } from './sidebar-free.component';
 
@@ -6,7 +6,7 @@ describe('SidebarFreeComponent', () => {
   let component: SidebarFreeComponent;
   let fixture: ComponentFixture<SidebarFreeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SidebarFreeComponent ]
     })
